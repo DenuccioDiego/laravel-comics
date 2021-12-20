@@ -11,6 +11,7 @@ $info_color: #b0fd9c;
 $title_card: #003f5e;
 $text_card: #838283;
 $info_talent: #04b1e1;
+$info_page_card: rgba(175, 168, 168, 0.603);
 
 header{
 
@@ -192,5 +193,17 @@ li{
           color: $info_talent;
      }
 
+
+     .container-info-page{
+          max-width: 1140px;
+          margin:auto;
+          img{
+               background-color: $info_page_card;
+               width: 65%;
+          }
+          .col-3{
+               color: $info_page_card;
+          }
+     }
 }
 

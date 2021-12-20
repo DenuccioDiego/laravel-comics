@@ -63,7 +63,7 @@
                </div>
           </div>
 
-          <div id="details_comics" class="mt-4 p-2 border-top">
+          <div id="details_comics" class="mt-4 pt-2 border-top">
                <div class="container-card pt-2">
                     <div class="row gx-5">
 
@@ -141,6 +141,10 @@
 
                     </div>
                </div>
+          
+          
+               
+          @include('partials.info_page_card')
           </div>
 
      </section>

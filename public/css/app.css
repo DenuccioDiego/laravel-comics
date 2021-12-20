@@ -11392,3 +11392,14 @@ li {
 #one_card_section .color_talent_info {
   color: #04b1e1;
 }
+#one_card_section .container-info-page {
+  max-width: 1140px;
+  margin: auto;
+}
+#one_card_section .container-info-page img {
+  background-color: rgba(175, 168, 168, 0.603);
+  width: 65%;
+}
+#one_card_section .container-info-page .col-3 {
+  color: rgba(175, 168, 168, 0.603);
+}
