@@ -11350,3 +11350,18 @@ li {
   background-color: #0282f9;
   font-weight: 600;
 }
+#cards_section a {
+  text-decoration: none;
+}
+
+#one_card_section #top_bar {
+  height: 10vh;
+  background-color: #0282f9;
+}
+#one_card_section #top_bar .position-absolute {
+  top: 20%;
+  left: 0%;
+}
+#one_card_section #details_comics {
+  background-color: #f6f6f6;
+}

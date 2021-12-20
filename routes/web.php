@@ -17,5 +17,16 @@ Route::get('/', function () {
 
     $cards = config('db_comics');
 
-    return view('welcome', compact('cards'));
+    return view('home', compact('cards'));
 })->name('home');
+
+
+Route::get('/card/1', function() {
+
+    $cards = config('db_comics');
+
+    return view('card_ActionComics', compact('cards'));
+})->name('card_uno');
+
+
+

@@ -4,6 +4,7 @@
 /* Variables */
 $top_color : #0282f9;
 $color_footer_bot: #303030;
+$details_comics : #f6f6f6;
 /* Header */
 
 // #site_header {
@@ -143,4 +144,22 @@ li{
           font-weight: 600;
      }
 
+     a{
+          text-decoration: none;
+     }
 }
+
+#one_card_section{
+     #top_bar{
+          height: 10vh;
+          background-color: $top_color;
+          .position-absolute{
+               top: 20%;
+               left: 0%;
+          }
+     }
+     #details_comics{
+          background-color: $details_comics;
+     }
+}
+

@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 
-
 @section('content')
 <div id="cards_section">
     <div class="container py-5 position-relative">
@@ -11,12 +10,15 @@
             @foreach($cards as $card)
             <div class="col-2">
 
-                <div class="">
-                    <img class="mb-3" src="{{$card['thumb']}}" alt="">
-                    <span class="text-white mt-5">
-                        {{$card['series']}}
-                    </span>
-                </div>
+                <a href="{{route('card_uno')}}">
+                    <div class="">
+                        <img class="mb-3" src="{{$card['thumb']}}" alt="">
+                        <span class="text-white mt-5">
+                            {{$card['series']}}
+                        </span>
+                    </div>
+                </a>
+                
 
             </div>
             @endforeach
@@ -34,18 +36,11 @@
         </div>
 
         
-        
-        
-        
-
     </div>
 
 </div>
 
-
-
-
-
+@include('partials.info_page')
 
 
 @endsection

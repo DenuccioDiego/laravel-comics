@@ -18,8 +18,6 @@
 
         <main id="site_main" class="">
                 @yield('content')
-
-                @include('partials.info_page')
         </main>
 
         
