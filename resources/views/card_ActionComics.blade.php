@@ -89,34 +89,34 @@
                          <div class="col-6">
                               <h5>Specs</h5>
 
-                              <div class="row">
+                              <div class="row gx-2">
                                    <div class="col-2">
                                         <span>Series:</span>
                                    </div>
-                                   <div class="col-10">
+                                   <div class="col-10 ps-4">
                                         <span>
                                              {{$card['series']}}
                                         </span>
                                    </div>
                               </div>
 
-                              <div class="row">
+                              <div class="row gx-2">
                                    <div class="col-2">
                                         <span>U.S. Price</span>
                                    </div>
-                                   <div class="col-10">
+                                   <div class="col-10 ps-4">
                                         <span>
                                              {{$card['price']}}
                                         </span>
                                    </div>
                               </div>
 
-                              <div class="row">
+                              <div class="row gx-2">
                                    <div class="col-2">
                                         <span>On Sale Date:</span>
                                    </div>
 
-                                   <div class="col-10">
+                                   <div class="col-10 ps-4">
                                         <span>
                                              {{$card['sale_date']}}
                                         </span>

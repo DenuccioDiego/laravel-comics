@@ -7,10 +7,10 @@
 
         <div class="row gy-5">
 
-            @foreach($cards as $card)
+            @foreach($cards as $index => $card)
             <div class="col-2">
 
-                <a href="">
+                <a href="{{ route('one_card',['id'=> $index]) }}">
                     <div class="">
                         <img class="mb-3" src="{{$card['thumb']}}" alt="">
                         <span class="text-white mt-5">
