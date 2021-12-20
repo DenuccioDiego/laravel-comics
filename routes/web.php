@@ -24,10 +24,16 @@ Route::get('/', function () {
 Route::get('/card/{id}', function($id) {
 
     $cards = config('db_comics');
-    $card = $cards[$id];
     
+    
+    if(is_numeric($id) && $id >= 0 && $id < count($cards)){
+        $card = $cards[$id];
+        return view('card_ActionComics', compact('cards','id','card'));
+    } else {
+        abort(404);
+    }   
 
-    return view('card_ActionComics', compact('cards','id','card'));
+    
 })->name('one_card');
 
 
