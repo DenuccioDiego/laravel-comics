@@ -10,7 +10,7 @@
                </div>
           </div>
           
-          <div class="container pt-4 position-relative">
+          <div class="container-card pt-4 position-relative">
 
                
                          
@@ -21,18 +21,31 @@
                <div class="row">
 
                     <div class="col-8">
-                         <h2>
+                         <h2 class="fw-bolder">
                               {{$card['title']}}
                          </h2>
-                         <div>
-                              <span>
-                                   U.S.Price:{{$card['price']}}
-                              </span>
-                              <span>
-                                   AVALIABLE
-                              </span>
-                              <span>
-                                   CHECK AVAILABILTY
+                         <div class="price_bar row gx-0 border-bottom color_border fw-bold my-3">
+
+                              <div class="row col-9 border-end p-3 color_border">
+
+                                   <div class="col-6">
+                                            <span class="color_price_info">U.S.Price:</span>
+                                            <span class="text-white">
+                                                 {{$card['price']}}
+                                             </span> 
+                                   </div>
+
+                                   <div class="col-6 text-end">
+                                        <span class="color_price_info">
+                                             AVALIABLE
+                                        </span>
+                                        
+                                   </div>
+
+                              </div>
+                                   
+                              <span class="text-white col-3 text-center p-3">
+                                        Check Availability
                               </span>
                          </div>
                          <p>
@@ -50,17 +63,17 @@
                </div>
           </div>
 
-          <div id="details_comics">
-               <div class="container">
-                    <div class="row">
+          <div id="details_comics" class="mt-4 p-2 border-top">
+               <div class="container-card pt-2">
+                    <div class="row gx-5">
 
                          <div class="col-6">
-                              <h5>Talent</h5>
-                              <div class="row">
+                              <h4 class="mb-4 fw-bolder">Talent</h4>
+                              <div class="row gx-0 border-top border-bottom p-2">
                                    <div class="col-2">
-                                        <span>Art by:</span>
+                                        <span class="color_info">Art by:</span>
                                    </div>
-                                   <div class="col-10">
+                                   <div class="col-10 ps-5 color_talent_info">
                                         <span>
                                              @foreach($card['artists'] as $artist)
 
@@ -70,13 +83,13 @@
                                         </span>
                                    </div>
                               </div>
-                              <div class="row">
+                              <div class="row gx-0 border-top border-bottom p-2">
                                    <div class="col-2">
-                                        <span>
+                                        <span class="color_info">
                                              Written by:
                                         </span>
                                    </div>
-                                   <div class="col-10">
+                                   <div class="col-10 ps-5 color_talent_info">
                                         @foreach($card['writers'] as $writers)
 
                                              {{$writers}}
@@ -87,36 +100,36 @@
                          </div>
 
                          <div class="col-6">
-                              <h5>Specs</h5>
+                              <h4 class="mb-4 fw-bolder">Specs</h4>
 
-                              <div class="row gx-2">
-                                   <div class="col-2">
-                                        <span>Series:</span>
+                              <div class="row gx-2 border-top border-bottom p-2">
+                                   <div class="col-3">
+                                        <span class="color_info">Series:</span>
                                    </div>
-                                   <div class="col-10 ps-4">
+                                   <div class="col-9 ps-4 color_talent_info">
                                         <span>
                                              {{$card['series']}}
                                         </span>
                                    </div>
                               </div>
 
-                              <div class="row gx-2">
-                                   <div class="col-2">
-                                        <span>U.S. Price</span>
+                              <div class="row gx-2 border-top border-bottom p-2">
+                                   <div class="col-3">
+                                        <span class="color_info">U.S. Price</span>
                                    </div>
-                                   <div class="col-10 ps-4">
+                                   <div class="col-9 ps-4">
                                         <span>
                                              {{$card['price']}}
                                         </span>
                                    </div>
                               </div>
 
-                              <div class="row gx-2">
-                                   <div class="col-2">
-                                        <span>On Sale Date:</span>
+                              <div class="row gx-2 border-top border-bottom p-2">
+                                   <div class="col-3">
+                                        <span class="color_info">On Sale Date:</span>
                                    </div>
 
-                                   <div class="col-10 ps-4">
+                                   <div class="col-9 ps-4">
                                         <span>
                                              {{$card['sale_date']}}
                                         </span>

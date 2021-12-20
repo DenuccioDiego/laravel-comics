@@ -11244,7 +11244,6 @@ textarea.form-control-lg {
   }
 }
 /* Variables */
-/* Header */
 header {
   font-weight: 600;
 }
@@ -11354,6 +11353,18 @@ li {
   text-decoration: none;
 }
 
+#one_card_section .container-card {
+  max-width: 1140px;
+  margin: auto;
+  padding-bottom: 7.5rem;
+}
+#one_card_section h2, #one_card_section h4 {
+  color: #003f5e;
+}
+#one_card_section p {
+  color: #838283;
+  font-weight: 600;
+}
 #one_card_section #top_bar {
   height: 10vh;
   background-color: #0282f9;
@@ -11361,7 +11372,23 @@ li {
 #one_card_section #details_comics {
   background-color: #f6f6f6;
 }
-#one_card_section > .container > img {
-  top: -105%;
+#one_card_section > .container-card > img {
+  top: -70%;
   left: 1%;
+}
+#one_card_section .price_bar {
+  background-color: #55ba59;
+}
+#one_card_section .color_border {
+  border-color: #357739 !important;
+}
+#one_card_section .color_price_info {
+  color: #b0fd9c;
+}
+#one_card_section .color_info {
+  color: #003f5e;
+  font-weight: 600;
+}
+#one_card_section .color_talent_info {
+  color: #04b1e1;
 }

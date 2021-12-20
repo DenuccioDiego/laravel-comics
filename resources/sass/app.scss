@@ -5,21 +5,12 @@
 $top_color : #0282f9;
 $color_footer_bot: #303030;
 $details_comics : #f6f6f6;
-/* Header */
-
-// #site_header {
-//     nav {
-//         a.nav-link {
-            
-//             font-weight: 500;
-
-//             &:hover {
-                
-//                 color: white;
-//             }
-//         }
-//     }
-// }
+$price_bar : #55ba59;
+$color_border: #357739;
+$info_color: #b0fd9c;
+$title_card: #003f5e;
+$text_card: #838283;
+$info_talent: #04b1e1;
 
 header{
 
@@ -150,6 +141,22 @@ li{
 }
 
 #one_card_section{
+
+     .container-card{
+          max-width: 1140px;
+          margin:auto;
+          padding-bottom: 7.5rem;
+     }
+
+     h2, h4{
+          color: $title_card;
+     }
+
+     p{
+          color: $text_card;
+          font-weight: 600;
+     }
+
      #top_bar{
           height: 10vh;
           background-color: $top_color;
@@ -159,9 +166,31 @@ li{
           background-color: $details_comics;
      }
 
-     &>.container>img{
-          top: -105%;
+     &>.container-card>img{
+          top: -70%;
           left: 1%;
      }
+
+     .price_bar{
+          background-color: $price_bar;
+     }
+
+     .color_border{
+          border-color: $color_border !important;
+     }
+
+     .color_price_info{
+          color:$info_color;
+     }
+
+     .color_info{
+          color: $title_card;
+          font-weight: 600;
+     }
+
+     .color_talent_info{
+          color: $info_talent;
+     }
+
 }
 
