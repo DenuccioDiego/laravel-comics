@@ -10,7 +10,7 @@
             @foreach($cards as $card)
             <div class="col-2">
 
-                <a href="{{route('card_uno')}}">
+                <a href="">
                     <div class="">
                         <img class="mb-3" src="{{$card['thumb']}}" alt="">
                         <span class="text-white mt-5">

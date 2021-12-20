@@ -11358,10 +11358,10 @@ li {
   height: 10vh;
   background-color: #0282f9;
 }
-#one_card_section #top_bar .position-absolute {
-  top: 20%;
-  left: 0%;
-}
 #one_card_section #details_comics {
   background-color: #f6f6f6;
+}
+#one_card_section > .container > img {
+  top: -105%;
+  left: 1%;
 }

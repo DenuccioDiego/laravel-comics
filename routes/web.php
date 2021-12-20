@@ -21,12 +21,14 @@ Route::get('/', function () {
 })->name('home');
 
 
-Route::get('/card/1', function() {
+Route::get('/card/{id}', function($id) {
 
     $cards = config('db_comics');
+    $card = $cards[$id];
+    
 
-    return view('card_ActionComics', compact('cards'));
-})->name('card_uno');
+    return view('card_ActionComics', compact('cards','id','card'));
+})->name('one_card');
 
 
 

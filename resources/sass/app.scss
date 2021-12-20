@@ -153,13 +153,15 @@ li{
      #top_bar{
           height: 10vh;
           background-color: $top_color;
-          .position-absolute{
-               top: 20%;
-               left: 0%;
-          }
+          
      }
      #details_comics{
           background-color: $details_comics;
+     }
+
+     &>.container>img{
+          top: -105%;
+          left: 1%;
      }
 }
 

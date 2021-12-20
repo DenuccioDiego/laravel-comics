@@ -3,29 +3,30 @@
 @section('content')
 
      <section id="one_card_section">
+
           <div id="top_bar">
                <div class="container">
-                    <div class="position-relative">
-                         
-                         <img class="position-absolute" src="{{$cards[0]['thumb']}}" alt="">
-                         
-                         
-                    </div>
+                    
                </div>
           </div>
           
+          <div class="container pt-4 position-relative">
 
-          <div class="container pt-4">
+               
+                         
+               <img class="position-absolute" src="{{$card['thumb']}}" alt="">
+                              
+               
 
                <div class="row">
 
                     <div class="col-8">
                          <h2>
-                              {{$cards[0]['title']}}
+                              {{$card['title']}}
                          </h2>
                          <div>
                               <span>
-                                   U.S.Price:{{$cards[0]['price']}}
+                                   U.S.Price:{{$card['price']}}
                               </span>
                               <span>
                                    AVALIABLE
@@ -35,7 +36,7 @@
                               </span>
                          </div>
                          <p>
-                              {{$cards[0]['description']}}
+                              {{$card['description']}}
                          </p>
                     </div>
 
@@ -61,7 +62,7 @@
                                    </div>
                                    <div class="col-10">
                                         <span>
-                                             @foreach($cards[0]['artists'] as $artist)
+                                             @foreach($card['artists'] as $artist)
 
                                                   {{$artist}}
 
@@ -76,9 +77,9 @@
                                         </span>
                                    </div>
                                    <div class="col-10">
-                                        @foreach($cards[0]['writers'] as $writer)
+                                        @foreach($card['writers'] as $writers)
 
-                                             {{$writer}}
+                                             {{$writers}}
 
                                         @endforeach
                                    </div>
@@ -94,7 +95,7 @@
                                    </div>
                                    <div class="col-10">
                                         <span>
-                                             {{$cards[0]['series']}}
+                                             {{$card['series']}}
                                         </span>
                                    </div>
                               </div>
@@ -105,7 +106,7 @@
                                    </div>
                                    <div class="col-10">
                                         <span>
-                                             {{$cards[0]['price']}}
+                                             {{$card['price']}}
                                         </span>
                                    </div>
                               </div>
@@ -117,7 +118,7 @@
 
                                    <div class="col-10">
                                         <span>
-                                             {{$cards[0]['sale_date']}}
+                                             {{$card['sale_date']}}
                                         </span>
                                    </div>
                               </div>
@@ -128,10 +129,6 @@
                     </div>
                </div>
           </div>
-
-
-
-
 
      </section>
 
