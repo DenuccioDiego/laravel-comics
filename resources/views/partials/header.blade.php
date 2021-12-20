@@ -25,16 +25,15 @@
                </div>
 
                <div class="col-8 text-center">
-                    <span>CHARATERS</span>
-                    <span>COMICS</span>
-                    <span>MOVIES</span>
-                    <span>TV</span>
-                    <span>GAMES</span>
-                    <span>COLLECTIBLES</span>
-                    <span>VIDEOS</span>
-                    <span>FANS</span>
-                    <span>NEWS</span>
-                    <span>SHOP</span>
+                    @foreach (config('db_comics_header') as $item)
+
+                         <span class="{{ Route::currentRouteName() === $item['name_route'] ? 'active' : '' }}">
+                              <a href="{{route($item['name_route'])}}">
+                                   {{$item['text']}}
+                              </a>
+                         </span>
+
+                    @endforeach
                </div>
 
                <div class="col-2 text-end">

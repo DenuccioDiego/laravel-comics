@@ -11247,6 +11247,13 @@ textarea.form-control-lg {
 header {
   font-weight: 600;
 }
+header a {
+  text-decoration: none;
+  color: black;
+}
+header .active {
+  border-bottom: 4px solid #0282f9;
+}
 header #top_header {
   background-color: #0282f9;
   font-size: 0.75rem;
